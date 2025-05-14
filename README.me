@@ -1,30 +1,35 @@
-# DiskViewer
+# 💾 DiskViewer
 
-**DiskViewer** is a lightweight, terminal-based disk sector viewer and editor written in C using `ncurses`. It allows you to inspect, edit, and analyze raw sectors on physical disks or disk images in both hex and ASCII form — similar in spirit to a forensic hex editor.
+**DiskViewer** is a lightweight, terminal-based disk sector viewer and editor written in **C** with **ncurses**.  
+It lets you inspect, navigate, and manipulate raw disk sectors in both **hex** and **ASCII** — a compact tool for low-level disk analysis or digital forensics.
 
 ---
 
-## 🧩 Features
+## ✨ Features
 
-- View raw disk sectors in hex + ASCII side-by-side
-- Jump to any sector (`j`)
-- Edit and write individual sector bytes (`x`, `w`)
-- Export sectors to binary files (`e`)
-- Parse MBR and GPT partition tables (`m`, `g`)
-- Search for ASCII strings (`s`)
-- Supports both disk devices (e.g., `/dev/sda`) and image files
+- 🔍 View raw disk sectors in **hex + ASCII** side-by-side  
+- 🔁 Jump to specific sectors (`j`)  
+- 🛠️ Edit and write sector bytes (`x`, `w`)  
+- 📤 Export sectors to binary files (`e`)  
+- 🧭 Parse **MBR** and **GPT** partition tables (`m`, `g`)  
+- 🔎 Search for ASCII strings across the disk (`s`)  
+- 🖥️ Works with both real devices and image files
 
 ---
 
 ## 🛠️ Build Instructions
 
-### Prerequisites
+> **Supported Platforms:**  
+> ✅ FreeBSD  
+> ✅ Linux (Ubuntu, Arch, etc.)
 
-- FreeBSD or Linux
-- `make`, `gcc` or `clang`
-- `ncurses` library installed
+### 📦 Prerequisites
 
-### To build:
+- `gcc` or `clang`
+- `make`
+- `ncurses` library
+
+### 🔧 Compile
 
 ```bash
 git clone https://github.com/yourusername/diskviewer.git
