@@ -32,6 +32,6 @@ It lets you inspect, navigate, and manipulate raw disk sectors in both **hex** a
 ### 🔧 Compile
 
 ```bash
-git clone https://github.com/yourusername/diskviewer.git
+git clone https://github.com/th3wst/diskviewer.git
 cd diskviewer
 make
